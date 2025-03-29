@@ -1,0 +1,13 @@
+@use "../../constant" as *;
+
+
+.header{
+    @include display(center, center, column);
+    @include spacing($m-top:30px);
+    text-align: center;
+    font-family: "CustomFont1";
+    color: white;
+
+
+}
+

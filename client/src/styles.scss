@@ -1,0 +1,30 @@
+@use "constant" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@font-face{
+    font-family: "CustomFont1";
+  src: url("./assets/CustomFont1.ttf") format("truetype");
+}
+
+body{
+    background-color: #001242 !important;
+}
+// html{
+//     font-size: x-large;
+// }
+
+
+
+// @media screen and (max-width: 576px){
+//     html{
+//         font-size: large;
+//     }
+// }
+
+

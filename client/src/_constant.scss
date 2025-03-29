@@ -1,0 +1,33 @@
+@mixin display(
+  $justify-content: flex-start,
+  $align-items: flex-start,
+  $flex-direction: row,
+  $flex-wrap: nowrap
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-flow: $flex-direction $flex-wrap;
+}
+
+@mixin spacing(
+  $m-top: 0,
+  $m-right: 0,
+  $m-bottom: 0,
+  $m-left: 0,
+  $p-top: 0,
+  $p-right: 0,
+  $p-bottom: 0,
+  $p-left: 0,
+  $margin: 0,
+  $padding: 0
+) {
+  margin: $m-top $m-right $m-bottom $m-left;
+  padding: $p-top $p-right $p-bottom $p-left;
+  @if ($margin != 0) {
+    margin: $margin;
+  }
+  @if ($padding != 0) {
+    padding: $margin;
+  }
+}
